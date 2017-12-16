@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tn.esprit.cupidonrevision.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/cupid"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <EditText
+        android:id="@+id/edt_nom_fille"
+        android:layout_below="@id/imgLogo"
+        android:layout_margin="10dp"
+        android:hint="Nom fille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_nom_garcon"
+        android:layout_below="@id/edt_nom_fille"
+        android:hint="Nom garçon"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <Button
+            android:id="@+id/btn_annuler"
+            android:text="Annuler"
+            android:onClick="onClick"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_calculer"
+            android:text="Calculer"
+            android:onClick="onClick"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
